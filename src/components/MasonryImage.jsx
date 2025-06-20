@@ -10,12 +10,12 @@ const CustomImage = ({ photo, className }) => {
   const [open, setOpen] = useState(false);
 
   const handleFullscreen = () => {
-    setHoveredId(null); // 👈 Reset hover manually when opening
+    setHoveredId(null); 
     setOpen(true);
   };
 
   const handleClose = () => {
-    setHoveredId(null); // 👈 Also clear on close to be extra safe
+    setHoveredId(null); 
     setOpen(false);
   };
 
@@ -39,8 +39,8 @@ const CustomImage = ({ photo, className }) => {
         close={handleClose}
         slides={[{ src: photo.urls.full, alt: photo.alt_description }]}
         render={{
-          buttonPrev: () => null, // remove prev button
-          buttonNext: () => null, // remove next button
+          buttonPrev: () => null, 
+          buttonNext: () => null,
         }}
       />
       {hoveredId === photo.id && !open && (
