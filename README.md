@@ -46,8 +46,8 @@ The app is deployed on **Netlify**. To run it locally:
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/image-bank-app.git
-cd image-bank-app
+git clone https://github.com/JMarte03/galleryo.git
+cd galleryo
 
 # Install dependencies
 npm install
