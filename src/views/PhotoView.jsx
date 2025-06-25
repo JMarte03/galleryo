@@ -12,7 +12,7 @@ const PhotoView = () => {
   useEffect(() => {
     const fetchImageData = async () => {
       try {
-        const apiUrl = `https://api.unsplash.com/photos/${id}?client_id=LhBTM83G457oXl_lP8N6W66FE2xo-qK6MBIZDJ67-HE`;
+        const apiUrl = `https://api.unsplash.com/photos/${id}?client_id=${import.meta.env.VITE_API_ACCESS_KEY}`;
         const response = await fetch(apiUrl);
         const data = await response.json();
         setImageData(data);
@@ -29,7 +29,7 @@ const PhotoView = () => {
   useEffect(() => {
     const fetchRelatedImages = async () => {
       try {
-        const apiUrl = `${relatedCollection}?per_page=20&client_id=LhBTM83G457oXl_lP8N6W66FE2xo-qK6MBIZDJ67-HE`;
+        const apiUrl = `${relatedCollection}?per_page=20&client_id=${import.meta.env.VITE_API_ACCESS_KEY}`;
         const response = await fetch(apiUrl);
         const data = await response.json();
         setCollectionImages(data);

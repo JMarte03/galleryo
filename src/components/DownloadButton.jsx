@@ -6,7 +6,7 @@ const DownloadButton = ({ photoId, width }) => {
     try {
       // 1. Track download and get the actual image URL
       const trackingRes = await fetch(
-        `https://api.unsplash.com/photos/${photoId}/download?client_id=LhBTM83G457oXl_lP8N6W66FE2xo-qK6MBIZDJ67-HE`
+        `https://api.unsplash.com/photos/${photoId}/download?client_id=${import.meta.env.VITE_API_ACCESS_KEY}`
       );
       const trackingData = await trackingRes.json();
       const imageUrl = trackingData.url;

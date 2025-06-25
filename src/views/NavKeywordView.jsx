@@ -24,7 +24,7 @@ const NavKeywordPage = ({ keyword }) => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const apiUrl = `https://api.unsplash.com/search/photos?query=${keyword}&per_page=30&page=${page}&client_id=LhBTM83G457oXl_lP8N6W66FE2xo-qK6MBIZDJ67-HE`;
+        const apiUrl = `https://api.unsplash.com/search/photos?query=${keyword}&per_page=30&page=${page}&client_id=${import.meta.env.VITE_API_ACCESS_KEY}`;
         const res = await fetch(apiUrl);
         const data = await res.json();
         setImages(data.results);
