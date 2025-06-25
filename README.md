@@ -3,8 +3,9 @@
 
 A responsive web application that lets users browse, search, and download **high-quality free images** from [Unsplash](https://unsplash.com). Built with **React**, **Vite**, and **Tailwind CSS**, it offers a clean, fast, and user-friendly experience.
 
-![Vídeo sin título ‐ Hecho con Clipchamp (1) (1) (1) (1) (1)](https://github.com/user-attachments/assets/ad79e308-29ce-48f9-a660-f39a0c69fb27)
+Live on: https://galleryofree.netlify.app/
 
+![Vídeo sin título ‐ Hecho con Clipchamp (1) (1) (1) (1) (1)](https://github.com/user-attachments/assets/ad79e308-29ce-48f9-a660-f39a0c69fb27)
 
 ---
 
